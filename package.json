@@ -1,0 +1,28 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "Intro to webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dweedon/webpack-demo.git"
+  },
+  "keywords": [
+    "webpack",
+    "demo",
+    "intro"
+  ],
+  "author": "David Weedon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dweedon/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/dweedon/webpack-demo#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
