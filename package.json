@@ -4,7 +4,9 @@
   "description": "Intro to webpack",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rimraf": "rimraf",
+    "build": "npm run rimraf -- dist && webpack --config wp.dist.config.js",
+    "serve": "webpack-dev-server --inline --hot --config wp.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,23 @@
   },
   "homepage": "https://github.com/dweedon/webpack-demo#readme",
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "bootstrap": "4.0.0-alpha.3",
+    "css-loader": "^0.23.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.3"
   }
 }
